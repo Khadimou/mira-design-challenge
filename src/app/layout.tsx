@@ -19,6 +19,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://mira-design-challenge.vercel.app"),
   title: "MIRA Design Challenge | Imagine ta tenue de rêve et gagne-la",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   description:
     "Participe au MIRA Design Challenge ! Crée ta tenue traditionnelle avec notre IA et gagne-la cousue sur mesure. Concours ouvert à tous, Sénégal et diaspora.",
   keywords: [
