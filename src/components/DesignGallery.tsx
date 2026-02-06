@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
@@ -8,32 +9,32 @@ const DESIGNS = [
   {
     title: "Boubou Moderne",
     style: "Boubou",
-    gradient: "from-gold/20 via-gold/10 to-terracotta/20",
+    image: "/boubou.JPG",
   },
   {
     title: "Kaftan Élégant",
     style: "Kaftan",
-    gradient: "from-sage/20 via-sage/10 to-gold/20",
+    image: "/kaftan.JPG",
   },
   {
     title: "Robe Basin",
     style: "Basin",
-    gradient: "from-terracotta/20 via-terracotta/10 to-sage/20",
+    image: "/robe.JPG",
   },
   {
     title: "Bogolan Chic",
     style: "Bogolan",
-    gradient: "from-earth-light/20 via-earth-light/10 to-gold/20",
+    image: "/bogolan.JPG",
   },
   {
     title: "Ensemble Wax",
     style: "Wax",
-    gradient: "from-gold/20 via-sage/10 to-terracotta/20",
+    image: "/wax.JPG",
   },
   {
     title: "Tenue de Fête",
     style: "Festif",
-    gradient: "from-sage/20 via-gold/10 to-sage/20",
+    image: "/festif.JPG",
   },
 ];
 
@@ -102,22 +103,15 @@ export default function DesignGallery() {
                   className="snap-center shrink-0 w-[280px] sm:w-[300px]"
                 >
                   <div className="rounded-2xl overflow-hidden border border-beige/50 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
-                    {/* Placeholder for design image */}
-                    <div
-                      className={`aspect-[3/4] bg-gradient-to-br ${design.gradient} relative flex items-center justify-center`}
-                    >
-                      {/* Decorative pattern */}
-                      <div className="absolute inset-0 opacity-10 wax-pattern" />
-                      <div className="text-center relative z-10">
-                        <div className="w-16 h-16 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center mx-auto mb-3">
-                          <svg className="w-8 h-8 text-earth/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z" />
-                          </svg>
-                        </div>
-                        <p className="text-sm text-earth/50 font-medium">
-                          Image à venir
-                        </p>
-                      </div>
+                    {/* Design image */}
+                    <div className="aspect-[3/4] relative">
+                      <Image
+                        src={design.image}
+                        alt={design.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 280px, 300px"
+                      />
                     </div>
 
                     {/* Card info */}

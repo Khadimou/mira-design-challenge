@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute top-20 right-[-100px] w-[300px] h-[300px] rounded-full bg-gold/5 blur-3xl" />
       <div className="absolute bottom-20 left-[-100px] w-[400px] h-[400px] rounded-full bg-sage/5 blur-3xl" />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 py-28 sm:py-32 text-center">
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 py-28 sm:py-32 text-center flex flex-col items-center">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -39,7 +39,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
+          className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-center"
         >
           Imagine ta tenue
           <br />

@@ -11,9 +11,9 @@ const FAQ_ITEMS = [
       "Tout le monde peut participer ! Le concours est ouvert à tous, musulmans ou non, que tu sois au Sénégal ou dans la diaspora. Il suffit de télécharger MIRA Studio et de créer ton design.",
   },
   {
-    question: "C'est quoi les 10 crédits IA ?",
+    question: "C'est quoi les 5 crédits IA ?",
     answer:
-      "En créant ton compte sur MIRA Studio, tu reçois automatiquement 10 crédits IA gratuits. Chaque crédit te permet de générer un design de tenue unique grâce à notre intelligence artificielle. Tu as donc 10 essais pour créer la tenue de tes rêves !",
+      "En créant ton compte sur MIRA Studio, tu reçois automatiquement 5 crédits IA gratuits. Chaque crédit te permet de générer un design de tenue unique grâce à notre intelligence artificielle. Tu as donc 5 essais pour créer la tenue de tes rêves !",
   },
   {
     question: "Comment sont choisis les gagnants ?",
