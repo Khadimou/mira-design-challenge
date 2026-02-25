@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import Countdown from "./Countdown";
 
 const APPSTORE_URL = "https://apps.apple.com/us/app/mira-studio/id6754275249";
-const PLAYSTORE_URL =
-  "https://play.google.com/store/apps/details?id=com.mirastudio.app";
+const WEBSITE_URL = "https://sapia.shop";
 
 export default function Hero() {
   return (
@@ -98,7 +97,7 @@ export default function Hero() {
           </a>
 
           <a
-            href={PLAYSTORE_URL}
+            href={WEBSITE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-3 bg-white text-earth border-2 border-earth/10 px-6 py-3.5 rounded-full text-base font-semibold hover:border-gold hover:text-gold-dark transition-all duration-300 hover:shadow-lg"
@@ -106,11 +105,14 @@ export default function Hero() {
             <svg
               className="w-5 h-5"
               viewBox="0 0 24 24"
-              fill="currentColor"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.8}
             >
-              <path d="M3.18 23.49c.25.44.68.72 1.15.72.18 0 .37-.04.54-.12L12 20.47l7.13 3.62c.17.08.36.12.54.12.47 0 .9-.28 1.15-.72.37-.65.15-1.47-.49-1.84L13 17.81V6.19l7.33-3.84c.64-.37.86-1.19.49-1.84-.37-.65-1.19-.86-1.84-.49L12 3.53 4.98.02C4.33-.35 3.51-.14 3.14.51c-.37.65-.15 1.47.49 1.84L11 6.19v11.62l-7.33 3.84c-.64.37-.86 1.19-.49 1.84z" />
+              <circle cx="12" cy="12" r="10" />
+              <path strokeLinecap="round" d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
             </svg>
-            Android (Beta)
+            Utiliser le site
             <svg
               className="w-4 h-4 opacity-50 group-hover:translate-x-0.5 transition-transform"
               fill="none"

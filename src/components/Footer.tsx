@@ -1,8 +1,7 @@
 "use client";
 
 const APPSTORE_URL = "https://apps.apple.com/us/app/mira-studio/id6754275249";
-const PLAYSTORE_URL =
-  "https://play.google.com/store/apps/details?id=com.mirastudio.app";
+const WEBSITE_URL = "https://sapia.shop";
 const INSTAGRAM_URL = "https://www.instagram.com/mirastudio.match/";
 const TIKTOK_URL = "https://www.tiktok.com/@mirastudio.match";
 
@@ -16,7 +15,7 @@ export default function Footer() {
             Prêt(e) à relever le défi ?
           </h2>
           <p className="text-stone-light text-base sm:text-lg mb-8 max-w-lg mx-auto">
-            Télécharge MIRA Studio, crée ton design et tente de gagner ta tenue de rêve !
+            Télécharge l&apos;app ou utilise directement le site, crée ton design et tente de gagner ta tenue de rêve !
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -31,15 +30,16 @@ export default function Footer() {
               App Store
             </a>
             <a
-              href={PLAYSTORE_URL}
+              href={WEBSITE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white/10 text-cream font-semibold px-6 py-3 rounded-full hover:bg-white/20 transition-colors duration-200 border border-white/10"
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.18 23.49c.25.44.68.72 1.15.72.18 0 .37-.04.54-.12L12 20.47l7.13 3.62c.17.08.36.12.54.12.47 0 .9-.28 1.15-.72.37-.65.15-1.47-.49-1.84L13 17.81V6.19l7.33-3.84c.64-.37.86-1.19.49-1.84-.37-.65-1.19-.86-1.84-.49L12 3.53 4.98.02C4.33-.35 3.51-.14 3.14.51c-.37.65-.15 1.47.49 1.84L11 6.19v11.62l-7.33 3.84c-.64.37-.86 1.19-.49 1.84z" />
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+                <circle cx="12" cy="12" r="10" />
+                <path strokeLinecap="round" d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
               </svg>
-              Android (Beta)
+              Utiliser le site
             </a>
           </div>
         </div>
